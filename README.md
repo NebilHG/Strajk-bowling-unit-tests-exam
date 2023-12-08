@@ -25,7 +25,7 @@ User stories:
 4.Som användare vill jag kunna skicka iväg min reservation och få tillbaka ett ett bokningsnummer och totalsumma så jag vet hur mycket jag ska betala. (120 kr / person + 100 kr / bana).
     
     Det ska finnas en knapp för bokning som navigerar användaren till en bekräftelse sida 
-    Pris och bokningsnummer ska visas i bekräftelse sidan 
+    Pris ska visas i bekräftelse sidan 
 
 5.Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
     
