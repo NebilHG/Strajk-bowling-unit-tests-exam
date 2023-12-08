@@ -13,7 +13,7 @@ User stories:
 
 2.Som användare vill jag kunna välja skostorlek för varje spelare så varje spelare får skor som passar.
 
-    Användare ska kunna trycka på en knapp och få fram ett inputfält där den kan skriva in skostorlek
+    Användare ska kunna trycka på en knapp och lägga till skostorlek
 
 
 
