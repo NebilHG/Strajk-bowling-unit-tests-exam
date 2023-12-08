@@ -7,12 +7,11 @@ import router from '../router';
 
 describe('Testing Confirmation page', () => {
   beforeEach(() => {
-    render(
-      <RouterProvider router={router}>
-        <Confirmation />
-      </RouterProvider>
+    render(<RouterProvider router={router}><Confirmation /></RouterProvider>
     );
   });
+
+  
   test('Should show a message when no booking', () => {
     fireEvent.click(screen.getByTestId('nav-icon'));
     fireEvent.click(screen.getByText('Confirmation'));

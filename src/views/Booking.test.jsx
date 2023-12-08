@@ -3,7 +3,6 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { RouterProvider , MemoryRouter } from "react-router-dom";
 import Booking from "./Booking";
 import Shoes from "../components/Shoes/Shoes";
-
 import userEvent from "@testing-library/user-event";
 
 describe("Make a booking", () => {
@@ -26,24 +25,24 @@ describe("Make a booking", () => {
   });
 });
 
+
+
+
+
 describe("Choose date and time for booking ", () => {
   test("Should be able to select a date", () => {
-    render(
-      <MemoryRouter>
-        <Booking />
-      </MemoryRouter>
+    render( <MemoryRouter><Booking /></MemoryRouter>
     );
+
     const dateInput = screen.getByLabelText(/date/i);
     fireEvent.change(dateInput, { target: { value: "2023-12-08" } });
     expect(dateInput.value).toBe("2023-12-08");
   });
 
   test("Should be able to select a time", () => {
-    render(
-      <MemoryRouter>
-        <Booking />
-      </MemoryRouter>
+    render(<MemoryRouter><Booking /></MemoryRouter>
     );
+
     const timeInput = screen.getByLabelText(/time/i);
     fireEvent.change(timeInput, { target: { value: "17:00" } });
     expect(timeInput.value).toBe("17:00");
@@ -53,11 +52,9 @@ describe("Choose date and time for booking ", () => {
 
   describe("Choose nr of players and lanes", () => {
     test(" Should be able to add nr of players and lanes", () => {
-      render(
-        <MemoryRouter>
-          <Booking />
-        </MemoryRouter>
+      render(<MemoryRouter><Booking /></MemoryRouter>
       );
+
       const playersInput = screen.getByLabelText(/number of awesome bowlers/i);
       fireEvent.change(playersInput, { target: { value: "7" } });
       expect(playersInput.value).toBe("7");
