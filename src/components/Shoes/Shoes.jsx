@@ -8,7 +8,7 @@ function Shoes({ updateSize, addShoe, removeShoe, shoes }) {
     const shoeComps = shoes.map((input, index) => {
         const label = `Shoe size / person ${index + 1}`;
         const shoeInput = (
-        <article className='shoes__form' key={ input.id }>
+        <article className='shoes__form' data-testid='shoes' key={ input.id }>
             <Input label={ label } type='text'
                 customClass='shoes__input'
                 name={ input.id }
