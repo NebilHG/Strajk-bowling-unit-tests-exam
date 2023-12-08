@@ -29,6 +29,7 @@ User stories:
 
 5.Som användare vill jag kunna navigera mellan boknings-och bekräftelsevyn.
     
-    Det ska finnas en menyknapp som ger alternativen att gå till boknings eller bekräftelse sidan 
+    Det ska finnas en menyknapp som ger alternativen att gå till boknings eller bekräftelse sidan
+    Användare ska navigeras till rätt sida när den trycker på länkarna för boknings eller bekräftelsesidan.
     
 
