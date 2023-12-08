@@ -8,7 +8,7 @@ describe('Testing navigation ', () => {
     fireEvent.click(screen.getByTestId('nav-icon'));
   });
 
-  test(' Should have 2 navigation links when the menu', () => {
+  test(' Should have 2 navigation links in the menu', () => {
     const navigationLinks = screen.getAllByTestId('nav-link');
     expect(navigationLinks.length).toBe(2);
     expect(navigationLinks[0].textContent).toBe('Booking');

@@ -7,10 +7,7 @@ import userEvent from "@testing-library/user-event";
 
 describe("Make a booking", () => {
   test(" Should be able to make a booking and get confirmation", async () => {
-    render(
-      <MemoryRouter>
-        <Booking />
-      </MemoryRouter>
+    render(<MemoryRouter><Booking /></MemoryRouter>
     );
 
     userEvent.type(screen.getByLabelText(/date/i), "2023-12-08");
